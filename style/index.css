@@ -1,0 +1,296 @@
+@font-face {
+  font-family: EngraversOldEnglish;
+  src: url(/asset/fonts/EngraversOldEnglish.otf);
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.banner {
+  width: 100%;
+  padding: 34px 30px;
+  max-height: 200px;
+  background-color: #0c0c0c;
+  overflow: hidden;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+nav {
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.6rem;
+  font-family: EngraversOldEnglish;
+  color: white;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+}
+
+.navbar-toggler i {
+  color: white;
+  font-size: 2rem;
+}
+
+.navbar-collapse {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 100%;
+  background-color: #0c0c0c;
+  z-index: 100;
+}
+
+.nav-item {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #e6e6e6;
+  transition: all 500ms ease-in-out;
+  font-family: Hanuman;
+  padding: 16px;
+  text-align: center;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.search-box {
+  width: 100%;
+  height: 36px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: white;
+  border: none;
+  padding: 16px;
+}
+
+.search-box button {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  background: none;
+  border: none;
+}
+
+main {
+  padding: 32px 16px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+}
+
+.category {
+  width: 100%;
+}
+
+.head {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.head h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0c0c0c;
+}
+
+.head h2 i {
+  font-size: 1.6rem;
+}
+
+.head a {
+  width: 84px;
+  height: 32px;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: -3px;
+  border-radius: 8px;
+  border: 1px solid #0c0c0c;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: #0c0c0c;
+  font-weight: 700;
+  transition: background 0.5s ease-out;
+}
+
+.head a:hover {
+  color: white;
+  background-color: #0c0c0c;
+  border: none;
+}
+
+.body {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 16px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  height: 96px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content img {
+  width: 50%;
+  height: inherit;
+  border-radius: 8px 0 0 8px;
+  object-fit: cover;
+}
+
+.info {
+  flex-grow: 1;
+  height: inherit;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.post-date p {
+  font-size: 1rem;
+}
+
+.post-date {
+  display: flex;
+  align-items: center;
+}
+
+.post-date i {
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+.first-content {
+  flex-direction: column;
+  height: 216px;
+}
+
+.first-content img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  max-height: 60%;
+  object-fit: cover;
+}
+
+.first-content .info {
+  width: 100%;
+  height: 40%;
+}
+
+.first-content .title {
+  font-size: 1.4rem;
+}
+
+.first-content .post-date p {
+  font-size: 1.2rem;
+}
+
+.ads-slider {
+  width: 100%;
+  height: 120px;
+  background: #d9d9d9;
+  position: relative;
+}
+
+.ads-slider > button {
+  border: none;
+  background: none;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: white;
+}
+
+#btnAds-prev {
+  left: 15px;
+  transform: translate(0, -50%);
+}
+
+#btnAds-next {
+  right: 15px;
+  transform: translate(0, -50%);
+}
+
+footer {
+  background-color: #0c0c0c;
+  color: white;
+  text-align: center;
+  padding: 32px;
+}
+
+footer h2 {
+  font-family: "EngraversOldEnglish";
+  font-size: 2.4rem;
+}
+
+.footer-item {
+  padding-top: 20px;
+}
+
+.footer-item h3 {
+  font-size: 1.8rem;
+}
+
+.footer-item ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-item ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
