@@ -181,10 +181,13 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  text-decoration: none;
+  color: #0c0c0c;
 }
 
 .content img {
-  width: 200px;
+  flex-shrink: 0;
+  width: 150px;
   height: inherit;
   border-radius: 8px;
   object-fit: cover;
@@ -201,6 +204,11 @@ main {
 
 .title {
   font-size: 1.2rem;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .post-date p {
@@ -219,7 +227,7 @@ main {
 
 .content:nth-child(1) {
   flex-direction: column;
-  height: 216px;
+  min-height: 216px;
 }
 
 .content:nth-child(1) img {
@@ -408,6 +416,10 @@ footer h2 {
 
   #hot-news .content:nth-child(2) {
     flex-direction: row;
+  }
+
+  #hot-news .content:nth-child(2) .title {
+    -webkit-line-clamp: 5;
   }
 
   #hot-news .content:nth-child(2) img {
