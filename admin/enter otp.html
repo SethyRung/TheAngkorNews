@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin 1.0</title>
+    <link rel="icon" href="images/Logo.ico" />
+
+    <link rel="stylesheet" href="style/login.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9dd4896de4.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/enter otp.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="images/default/OTP.jpg" alt="OTP Image" id="imgTitle" />
+      <h1 id="title">Enter OTP</h1>
+      <p>An 6 digit code has been sent to</p>
+      <p id="showEmail"></p>
+      <form class="frm">
+        <div class="form-control">
+          <label for="txtCode">Code</label>
+          <div>
+            <input type="text" id="txtCode" name="txtCode" />
+            <p id="sendNewOTP"></p>
+          </div>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <button type="submit" id="btnSubmit">Continue</button>
+        </div>
+      </form>
+      <a href="login.html"
+        ><i class="fa-solid fa-arrow-left"></i> Back to log in</a
+      >
+    </div>
+  </body>
+</html>

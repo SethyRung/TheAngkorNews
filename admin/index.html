@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin 1.0</title>
+    <link rel="icon" href="admin/images/Logo.ico" />
+    <link rel="stylesheet" href="style/index.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9dd4896de4.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- tiny texteditor -->
+    <script src="js/tinymce/tinymce.min.js"></script>
+
+    <script src="js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li>
+          <button id="btn-toggle-menu"><i class="fa-solid fa-bars"></i></button>
+        </li>
+        <li id="title">Angkor News</li>
+        <!-- <li>rungsethyhk@gmil.com</li> -->
+        <li>
+          <button id="btnLogout"><i class="fa-solid fa-power-off"></i></button>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="left-menu">
+        <ul>
+          <li class="menu-item">
+            <i class="fa-solid fa-user-gear"></i>
+            System
+            <ul class="sub-menu">
+              <li class="sub-menu-item">User List</li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <i class="fa-solid fa-gear"></i>
+            Setup
+            <ul class="sub-menu">
+              <li class="sub-menu-item">Menu List</li>
+              <li class="sub-menu-item">News List</li>
+              <li class="sub-menu-item">Ads List</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="detail-box">
+        <div class="head-control">
+          <ul>
+            <li>
+              <button id="btnAdd">
+                <i class="fa-solid fa-plus"></i>
+                Add
+              </button>
+            </li>
+            <li>
+              <input type="text" placeholder="Search" id="txtSearch" />
+              <select name="sltSearch" id="sltSearch">
+                <option value="id">ID</option>
+                <option value="title">Title</option>
+              </select>
+              <button id="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </li>
+            <li>
+              <select id="sltLimit">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+              <button id="btnPrev">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <p id="number-display">
+                <span id="current-page">1</span>/<span id="total-page">1</span>
+                of <span id="total"></span>
+              </p>
+              <button id="btnNext">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="data-control">
+          <table id="tbl-data"></table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 350px;
+}
+
+.container * {
+  color: #344563;
+  font-size: 1.4rem;
+}
+
+#imgTitle {
+  width: 100%;
+}
+
+#title {
+  font-size: 2rem;
+  color: #172b4d;
+}
+
+.container p {
+  margin-top: 15px;
+}
+
+.container a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+
+.frm {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 35px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #dbdada;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  padding: 10px;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #dbdada;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control > div {
+  width: 100%;
+  position: relative;
+}
+
+.form-control > div p {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #bcbcbc;
+  cursor: pointer;
+}
+
+#showPassword {
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  position: absolute;
+  top: 11px;
+  right: 18px;
+  font-size: 2rem;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.form-control > div i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+}
+
+#btnSubmit {
+  width: 100%;
+  background-color: #0065ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 45px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: white;
+  animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}

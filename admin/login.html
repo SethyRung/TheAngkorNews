@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin 1.0</title>
+    <link rel="icon" href="images/Logo.ico" />
+
+    <link rel="stylesheet" href="style/login.css" />
+
+    <script
+      src="https://kit.fontawesome.com/9dd4896de4.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/login.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="images/default/login.jpg"
+        alt="Login Image"
+        id="imgTitle"
+      />
+      <h1 id="title">Login</h1>
+      <form class="frm">
+        <div class="form-control">
+          <label for="txtEmail">Email</label>
+          <input type="text" id="txtEmail" name="txtEmail" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="txtPassword">Password</label>
+          <div>
+            <input type="password" id="txtPassword" name="txtPassword" />
+            <button type="button" id="showPassword"></button>
+
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye-slash"></i>
+          </div>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <button type="submit" id="btnSubmit">Login</button>
+        </div>
+      </form>
+      <a href="forgot password.html">Forgot Password?</a>
+    </div>
+  </body>
+</html>
